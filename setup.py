@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/dmptrluke/django-markdownfield",
     project_urls={
         "Bug Tracker": "https://github.com/dmptrluke/django-markdownfield/issues",
-    }
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
