@@ -13,7 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/dmptrluke/django-markdownfield",
     project_urls={
-        "Bug Tracker": https://github.com/dmptrluke/django-markdownfield/issues",
+        "Bug Tracker": "https://github.com/dmptrluke/django-markdownfield/issues",
     }
     classifiers=[
         "Programming Language :: Python :: 3",
