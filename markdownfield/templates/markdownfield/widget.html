@@ -1,7 +1,9 @@
 {% include 'django/forms/widgets/textarea.html' %}
 {{ options | json_script:options_id }}
 <script nonce="{{ csp_nonce }}" type="text/javascript">
-    const wrapper = {}; // wrapping allows us to have widgets with names that are invalid js identifiers (like admin inlines)
+    if (typeof(wrapper) === 'undefined') {
+        const wrapper = {}; // wrapping allows us to have widgets with names that are invalid js identifiers (like admin inlines)
+    }
     wrapper['{{ widget.name }}_options'] = JSON.parse(document.getElementById('{{ options_id }}').textContent);
     wrapper['{{ widget.name }}_editor'] = new EasyMDE(Object.assign({
         element: document.getElementById('{{ widget.attrs.id }}'),
