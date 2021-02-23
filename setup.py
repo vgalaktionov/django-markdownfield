@@ -21,12 +21,11 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     packages=setuptools.find_packages(),
-    python_requires='>=3.6',
+    python_requires='>=3.8',
     requires=[
-          'django>=2.2',
+          'django',
           'bleach',
           'markdown',
-          'shortuuid',
-          'dataclasses; python_version == "3.6"',
+          'shortuuid'
     ]
 )
